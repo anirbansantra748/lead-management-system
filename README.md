@@ -2,13 +2,15 @@
 
 > **A modern, full-stack Lead Management System built by Anirban Santra**
 
-[![Live Demo]([https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://lead-management-system-i2k5-git-main-anirbansantra748s-projects.vercel.app](https://lead-management-system-i2k5-git-main-anirbansantra748s-projects.vercel.app?_vercel_share=9ROXxYz1bfpvXJnoOUPb69jOE0WDqwLk))
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://lead-management-system-i2k5-git-main-anirbansantra748s-projects.vercel.app?_vercel_share=9ROXxYz1bfpvXJnoOUPb69jOE0WDqwLk)
 [![Backend API](https://img.shields.io/badge/API-Live-green?style=for-the-badge)](https://lead-management-system-wlg0.onrender.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge)](https://github.com/anirbansantra748/lead-management-system)
 
 ## 🌐 Live Application
 
-**🎯 Try it now:** [**https://lead-management-system-i2k5-git-main-anirbansantra748s-projects.vercel.app**](https://lead-management-system-i2k5-git-main-anirbansantra748s-projects.vercel.app)
+**🎯 Try it now:**  
+👉 [Frontend (Vercel)](https://lead-management-system-i2k5-git-main-anirbansantra748s-projects.vercel.app?_vercel_share=9ROXxYz1bfpvXJnoOUPb69jOE0WDqwLk)  
+👉 [Backend (Render)](https://lead-management-system-wlg0.onrender.com)
 
 ### 🔑 Test Credentials
 ```
