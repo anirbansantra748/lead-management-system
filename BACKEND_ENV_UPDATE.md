@@ -6,7 +6,7 @@ Your backend is deployed but needs the frontend URL to be added to CORS configur
 ## Required Environment Variables for Backend on Render:
 
 ```
-FRONTEND_URL=https://your-netlify-url.netlify.app
+FRONTEND_URL=https://lead-management-system-i2k5-git-main-anirbansantra748s-projects.vercel.app
 JWT_SECRET=your-super-secret-jwt-key-must-be-at-least-32-characters-long-for-security-purposes
 MONGODB_URI=mongodb+srv://opvmro460:oQSi3PUnafrbOwQv@cluster0.57nzu.mongodb.net/lead-management-system?retryWrites=true&w=majority&appName=Cluster0
 NODE_ENV=production
@@ -18,7 +18,7 @@ PORT=10000
 1. **Go to your Render Dashboard**
 2. **Select your backend service**: `lead-management-system-wlg0`
 3. **Go to Environment tab**
-4. **Add FRONTEND_URL**: Set it to your Netlify URL (e.g., `https://your-app.netlify.app`)
+4. **Add FRONTEND_URL**: Set it to your Vercel URL: `https://lead-management-system-i2k5-git-main-anirbansantra748s-projects.vercel.app`
 5. **Save Changes** - This will trigger a redeploy
 
 ## Your Current Backend URL:
