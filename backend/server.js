@@ -23,8 +23,44 @@ const limiter = rateLimit({
 app.use('/api/', limiter);
 
 // CORS configuration - Allow credentials for httpOnly cookies
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://localhost:3000',
+  process.env.FRONTEND_URL
+].filter(Boolean);
+
+// Add common deployment platforms
+if (process.env.NODE_ENV === 'production') {
+  allowedOrigins.push(
+    /https:\/\/.*\.netlify\.app$/,
+    /https:\/\/.*\.vercel\.app$/,
+    /https:\/\/.*\.herokuapp\.com$/,
+    /https:\/\/.*\.onrender\.com$/
+  );
+}
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: function (origin, callback) {
+    // Allow requests with no origin (mobile apps, Postman, etc.)
+    if (!origin) return callback(null, true);
+    
+    // Check if origin is in allowed list
+    const isAllowed = allowedOrigins.some(allowedOrigin => {
+      if (typeof allowedOrigin === 'string') {
+        return origin === allowedOrigin;
+      } else if (allowedOrigin instanceof RegExp) {
+        return allowedOrigin.test(origin);
+      }
+      return false;
+    });
+    
+    if (isAllowed) {
+      callback(null, true);
+    } else {
+      console.log('CORS blocked origin:', origin);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
