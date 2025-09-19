@@ -12,9 +12,11 @@
 
 ### 🔑 Test Credentials
 ```
-Email: test@example.com
-Password: password123
+Email: anirbansantra748@gmail.com
+Password: 1p3456
 ```
+
+*✨ Pre-loaded with 100 realistic leads for immediate testing!*
 
 ---
 
@@ -297,12 +299,13 @@ GET /api/leads?sort={"created_at":-1}
 ✅ **Unauthorized requests return 401** - Proper error handling  
 ✅ **Fully deployed** - Both frontend and backend hosted  
 
-## 🎯 Test Credentials
+## 🎯 Quick Start
 
-**Email**: test@example.com  
-**Password**: password123
+Just click the live demo link above and use the credentials:
+- **Email**: `anirbansantra748@gmail.com`  
+- **Password**: `1p3456`
 
-The system comes pre-loaded with 120+ sample leads for testing.
+You'll see 100 realistic leads ready for testing all the features!
 
 ## 📝 Project Structure
 
